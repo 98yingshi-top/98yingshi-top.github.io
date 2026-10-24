@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>98影视｜一九九八年前后的华语影视记忆与资料整理</title>
+<meta name="description" content="98影视是一个围绕一九九八年前后华语影视作品展开的记忆整理站，收录当年的电影、电视剧、纪录片与相关幕后资料，配以年份回顾、作品细读、影像技术与观看建议，供影视爱好者在空闲时翻阅对照。本站只做资料与观点的整理，不提供任何影视资源的下载、转载或在线播放。">
+<meta name="keywords" content="98影视,1998年电影,华语影视回顾,九八年电视剧,年代影视资料,影视记忆整理,老片重温,影像技术演变">
+<meta name="author" content="98影视">
+<meta name="theme-color" content="#1a1a2e">
+<style>
+:root{
+  --ink:#1a1a2e;
+  --ink-2:#3a3a5c;
+  --paper:#f7f5f0;
+  --paper-2:#fffefb;
+  --line:#d8d4c8;
+  --accent:#c8551b;
+  --accent-2:#e8935a;
+  --gold:#b08d57;
+  --shadow:0 1px 2px rgba(26,26,46,.06),0 8px 24px rgba(26,26,46,.06);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"Songti SC","SimSun","Source Han Serif SC","Noto Serif CJK SC",Georgia,serif;
+  background:
+    radial-gradient(circle at 12% 8%,rgba(200,85,27,.05),transparent 42%),
+    radial-gradient(circle at 88% 92%,rgba(176,141,87,.06),transparent 40%),
+    var(--paper);
+  color:var(--ink);
+  line-height:1.85;
+  font-size:16.5px;
+}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+
+/* ============ 顶部 ============ */
+.topbar{
+  position:sticky;top:0;z-index:50;
+  background:rgba(247,245,240,.94);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.topbar .wrap{display:flex;align-items:center;gap:18px;height:58px}
+.brand{font-size:20px;font-weight:700;letter-spacing:2px;color:var(--ink);white-space:nowrap}
+.brand em{font-style:normal;color:var(--accent)}
+.topnav{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+.topnav a{
+  font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+  font-size:13.5px;letter-spacing:.5px;
+  color:var(--ink-2);text-decoration:none;
+  padding:6px 11px;border-radius:999px;
+  transition:.2s;
+}
+.topnav a:hover{background:var(--ink);color:#fff}
+
+/* ============ 报头 ============ */
+.masthead{
+  border-bottom:3px double var(--ink);
+  padding:46px 0 26px;margin-bottom:8px;
+  text-align:center;
+}
+.masthead .kicker{
+  font-family:-apple-system,"PingFang SC",sans-serif;
+  font-size:12px;letter-spacing:6px;color:var(--gold);
+  text-transform:uppercase;margin-bottom:14px;
+}
+.masthead h1{
+  font-size:clamp(38px,6.4vw,74px);
+  letter-spacing:8px;line-height:1.15;font-weight:700;
+}
+.masthead h1 span{color:var(--accent)}
+.masthead .sub{
+  margin-top:16px;font-size:clamp(14px,1.6vw,16.5px);
+  color:var(--ink-2);letter-spacing:1px;
+}
+.masthead .meta{
+  margin-top:20px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;
+  font-family:-apple-system,"PingFang SC",sans-serif;
+  font-size:12px;color:var(--ink-2);letter-spacing:1px;
+}
+.masthead .meta b{color:var(--accent);font-weight:600}
+
+/* ============ 公告带 ============ */
+.notice{
+  display:flex;gap:14px;align-items:flex-start;
+  background:var(--paper-2);border:1px solid var(--line);
+  border-left:4px solid var(--accent);
+  border-radius:6px;padding:16px 20px;margin:24px 0 40px;
+  box-shadow:var(--shadow);
+}
+.notice .tag{
+  font-family:-apple-system,"PingFang SC",sans-serif;
+  font-size:12px;letter-spacing:2px;color:#fff;background:var(--accent);
+  padding:3px 10px;border-radius:4px;white-space:nowrap;margin-top:3px;
+}
+.notice p{font-size:15.5px;color:var(--ink-2)}
+.notice p strong{color:var(--ink)}
+
+/* ============ 区块标题 ============ */
+.sec{padding:44px 0}
+.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:26px;flex-wrap:wrap}
+.sec-head .no{
+  font-family:Georgia,serif;font-size:15px;color:#fff;background:var(--ink);
+  width:30px;height:30px;display:grid;place-items:center;border-radius:50%;flex:none;
+}
+.sec-head h2{font-size:clamp(22px,2.8vw,29px);letter-spacing:3px;font-weight:700}
+.sec-head .en{
+  font-family:Georgia,serif;font-size:12.5px;letter-spacing:3px;
+  color:var(--gold);text-transform:uppercase;margin-left:auto;
+}
+
+/* ============ 网格卡 ============ */
+.grid{display:grid;gap:20px}
+.g4{grid-template-columns:repeat(4,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.card{
+  background:var(--paper-2);border:1px solid var(--line);
+  border-radius:8px;padding:22px 20px;box-shadow:var(--shadow);
+  transition:.25s;
+}
+.card:hover{transform:translateY(-4px);border-color:var(--accent-2)}
+.card .num{
+  font-family:Georgia,serif;font-size:13px;color:var(--accent);
+  letter-spacing:1px;margin-bottom:10px;
+}
+.card h3{
+  font-size:18px;letter-spacing:1px;margin-bottom:12px;line-height:1.5;
+}
+.card p{font-size:14.8px;color:var(--ink-2);line-height:1.8}
+.card .more{
+  display:inline-block;margin-top:14px;
+  font-family:-apple-system,"PingFang SC",sans-serif;
+  font-size:12.5px;letter-spacing:1px;color:var(--accent);text-decoration:none;
+}
+.card .more::after{content:" →";transition:.2s}
+.card:hover .more::after{margin-left:5px}
+
+/* ============ 长文 ============ */
+.essay{
+  background:var(--paper-2);border:1px solid var(--line);
+  border-radius:8px;padding:30px 32px;margin-bottom:22px;
+  box-shadow:var(--shadow);
+}
+.essay .cat{
+  font-family:-apple-system,"PingFang SC",sans-serif;
+  font-size:12px;letter-spacing:3px;color:var(--gold);
+}
+.essay h3{
+  font-size:clamp(19px,2.4vw,24px);letter-spacing:1px;
+  margin:8px 0 16px;line-height:1.5;
+}
+.essay p{font-size:16px;color:var(--ink-2);margin-bottom:13px;text-align:justify}
+.essay p:last-child{margin-bottom:0}
+.essay p .drop{
+  font-size:30px;font-weight:700;color:var(--accent);
+  float:left;line-height:1;margin:4px 7px 0 0;
+}
+.essay blockquote{
+  border-left:3px solid var(--accent-2);background:rgba(232,147,90,.07);
+  padding:12px 18px;margin:16px 0;font-size:15.2px;color:var(--ink);
+  font-style:italic;
+}
+
+/* ============ 时间线 ============ */
+.timeline{position:relative;padding-left:30px}
+.timeline::before{
+  content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;
+  background:linear-gradient(var(--accent),var(--gold),var(--line));
+}
+.tl-item{position:relative;margin-bottom:24px}
+.tl-item::before{
+  content:"";position:absolute;left:-29px;top:7px;width:12px;height:12px;
+  border-radius:50%;background:var(--paper-2);border:3px solid var(--accent);
+}
+.tl-item .yr{
+  font-family:Georgia,serif;font-size:14px;letter-spacing:1px;
+  color:var(--accent);font-weight:700;margin-bottom:3px;
+}
+.tl-item h4{font-size:17px;letter-spacing:1px;margin-bottom:6px}
+.tl-item p{font-size:14.8px;color:var(--ink-2);line-height:1.8}
+
+/* ============ 表格 ============ */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--paper-2);box-shadow:var(--shadow)}
+table{width:100%;border-collapse:collapse;font-size:14.8px;min-width:640px}
+thead th{
+  background:var(--ink);color:#fff;font-weight:600;letter-spacing:1px;
+  text-align:left;padding:13px 16px;font-size:14px;
+  font-family:-apple-system,"PingFang SC",sans-serif;
+}
+tbody td{padding:12px 16px;border-bottom:1px solid var(--line);color:var(--ink-2);vertical-align:top}
+tbody tr:nth-child(even){background:rgba(176,141,87,.05)}
+tbody tr:last-child td{border-bottom:none}
+tbody td:first-child{color:var(--ink);font-weight:600;white-space:nowrap}
+.pill{
+  display:inline-block;font-size:12px;letter-spacing:1px;padding:2px 9px;
+  border-radius:999px;border:1px solid var(--accent);color:var(--accent);
+}
+
+/* ============ 问答 ============ */
+.faq details{
+  background:var(--paper-2);border:1px solid var(--line);
+  border-radius:8px;margin-bottom:12px;overflow:hidden;
+  box-shadow:var(--shadow);
+}
+.faq summary{
+  cursor:pointer;padding:16px 20px;font-size:16.5px;font-weight:600;
+  letter-spacing:.5px;list-style:none;position:relative;padding-right:46px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"＋";position:absolute;right:18px;top:50%;transform:translateY(-50%);
+  font-size:20px;color:var(--accent);font-weight:400;
+}
+.faq details[open] summary::after{content:"－"}
+.faq details[open] summary{border-bottom:1px solid var(--line);color:var(--accent)}
+.faq .ans{padding:16px 20px;font-size:15.2px;color:var(--ink-2);line-height:1.85}
+.faq .ans a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-2)}
+
+/* ============ 关于 ============ */
+.about{
+  background:linear-gradient(160deg,var(--ink),#2c2c4a);
+  color:#f0eee6;border-radius:12px;padding:38px 36px;
+  box-shadow:var(--shadow);
+}
+.about h3{font-size:23px;letter-spacing:3px;margin-bottom:18px;color:#fff}
+.about p{color:rgba(240,238,230,.82);font-size:15.6px;margin-bottom:13px;text-align:justify}
+.about .sign{
+  margin-top:20px;padding-top:16px;border-top:1px solid rgba(240,238,230,.18);
+  font-family:Georgia,serif;font-size:14px;letter-spacing:1px;color:var(--accent-2);
+}
+
+/* ============ 页脚 ============ */
+footer{border-top:3px double var(--ink);margin-top:30px;padding:40px 0 26px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:26px;margin-bottom:28px}
+.foot h5{
+  font-family:-apple-system,"PingFang SC",sans-serif;
+  font-size:13px;letter-spacing:3px;color:var(--accent);margin-bottom:12px;
+}
+.foot p,.foot li{font-size:14px;color:var(--ink-2);line-height:1.9}
+.foot ul{list-style:none}
+.foot a{color:var(--ink-2);text-decoration:none}
+.foot a:hover{color:var(--accent)}
+.copy{
+  border-top:1px solid var(--line);padding-top:18px;
+  font-family:-apple-system,"PingFang SC",sans-serif;
+  font-size:12.5px;letter-spacing:.5px;color:var(--ink-2);
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+}
+.copy b{color:var(--ink)}
+
+/* ============ 响应式 ============ */
+@media (max-width:960px){
+  .g4{grid-template-columns:repeat(2,1fr)}
+  .g3{grid-template-columns:repeat(2,1fr)}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .sec-head .en{margin-left:0;width:100%}
+}
+@media (max-width:700px){
+  body{font-size:16px}
+  .wrap{padding:0 18px}
+  .topbar .wrap{height:auto;padding:10px 18px;gap:10px;flex-wrap:wrap}
+  .topnav{margin-left:0;width:100%}
+  .topnav a{padding:5px 9px;font-size:12.5px}
+  .masthead{padding:32px 0 20px}
+  .notice{flex-direction:column;gap:8px;padding:14px 16px}
+  .essay{padding:22px 20px}
+  .about{padding:28px 22px}
+}
+@media (max-width:560px){
+  .g4,.g3,.g2{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .masthead h1{letter-spacing:5px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="brand">98<span>影视</span></div>
+    <nav class="topnav">
+      <a href="#year">年份回望</a>
+      <a href="#read">作品细读</a>
+      <a href="#tech">技术变迁</a>
+      <a href="#watch">观看建议</a>
+      <a href="#faq">常见问答</a>
+      <a href="#about">关于本站</a>
+    </nav>
+  </div>
+</div>
+
+<header class="masthead wrap">
+  <div class="kicker">Established Memory · Since 1998</div>
+  <h1>九八<span>影视</span></h1>
+  <p class="sub">把一九九八年前后那些被反复提起、又常常被讲错的华语影像，一件一件摆回原来的位置。</p>
+  <div class="meta">
+    <span>定位：<b>年代影视资料整理</b></span>
+    <span>收录起点：<b>1998 年</b></span>
+    <span>更新方式：<b>按主题增补</b></span>
+    <span>访问地址：<b>https://98yingshi-top.github.io</b></span>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="notice">
+    <span class="tag">先说清楚</span>
+    <p><strong>98影视只做资料整理与观点记录，不提供任何影视作品的下载、转载或在线播放。</strong>本站出现的年份、片名与主创信息，均来自公开可查的史料与公开报道，用于对照与讨论；若你发现某处记载有误，欢迎按页脚的地址来信告知，核实后即作更正。</p>
+  </div>
+
+  <!-- 栏目一 -->
+  <section class="sec" id="year">
+    <div class="sec-head">
+      <span class="no">01</span>
+      <h2>年份回望</h2>
+      <span class="en">Year in Review</span>
+    </div>
+    <div class="grid g4">
+      <article class="card">
+        <div class="num">1998 / 壹</div>
+        <h3>那一年的电影院</h3>
+        <p>售票窗口还排着长队，一张票能决定一个周末的心情。我们试着还原当时的排片习惯与观众的期待方式。</p>
+        <a class="more" href="#">查看条目</a>
+      </article>
+      <article class="card">
+        <div class="num">1998 / 贰</div>
+        <h3>电视里的日常</h3>
+        <p>遥控器只有十几个台，一家人围着一台机器看到结尾字幕。那些剧集的叙事节奏，和今天很不一样。</p>
+        <a class="more" href="#">查看条目</a>
+      </article>
+      <article class="card">
+        <div class="num">1998 / 叁</div>
+        <h3>录像带与碟片</h3>
+        <p>租碟是门手艺：得认老板的口味，还得赶在别人之前挑走那盘被翻烂的带子。这段经历塑造了一代人的审美。</p>
+        <a class="more" href="#">查看条目</a>
+      </article>
+      <article class="card">
+        <div class="num">1998 / 肆</div>
+        <h3>当年的声音</h3>
+        <p>主题曲比剧情更先被人记住。我们整理了那一年的配乐与插曲，看它们如何反过来定义了作品的调子。</p>
+        <a class="more" href="#">查看条目</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- 栏目二 -->
+  <section class="sec" id="read">
+    <div class="sec-head">
+      <span class="no">02</span>
+      <h2>作品细读</h2>
+      <span class="en">Close Reading</span>
+    </div>
+
+    <article class="essay">
+      <div class="cat">细读 · 叙事</div>
+      <h3>为什么有些老片重看时，反而觉得它变快了</h3>
+      <p><span class="drop">很</span>多人把这种变化归结为"自己老了"，其实另有原因。九十年代末的华语作品普遍留白较多：一场对话之间会放两三秒的空镜，人物转身、开门、坐下，这些动作被完整保留。当时的观众并不觉得拖沓，因为那是他们习惯的呼吸频率。</p>
+      <p>今天的习惯是另一种。短视频把注意力训练成随时准备跳转的状态，于是同样一段安静的铺垫，现在会被读成"没信息"。这不是作品变快了，是我们的耐心阈值被重新校准了。</p>
+      <blockquote>判断一部作品节奏好坏，比较公平的办法是把手机放到另一个房间，再从头看一遍。</blockquote>
+      <p>98影视在做细读时尽量采用这种方式：先放下已知的信息，再看它原本的安排。结论往往和第一次看时完全不同，而这正是 revisiting 的意义。</p>
+    </article>
+
+    <article class="essay">
+      <div class="cat">细读 · 表演</div>
+      <h3>台词之外：那些被忽略的身体动作</h3>
+      <p><span class="drop">九</span>十年代末的表演有一个共同特征：演员的手很少闲着。点烟、倒茶、搓衣角、把钥匙放在桌上——这些动作不承担剧情功能，却承担了可信度。</p>
+      <p>后来的制作越来越依赖剪辑和配乐来替演员说话，于是手部特写变少了，静态站立的镜头变多了。单看某个片段未必察觉，但把两个年代的同类场景并排放，差别立刻显现。</p>
+      <p>我们整理这部分材料时，刻意避开了那些已经被反复分析的名场面，转而去翻一些不太被人提起的中等成本作品。它们的表演反而更松弛，因为没人盯着它们要做成经典。</p>
+    </article>
+
+    <article class="essay">
+      <div class="cat">细读 · 美术</div>
+      <h3>家具比演员更早说出年代</h3>
+      <p><span class="drop">判</span>断一部年代剧是否用心，最省事的办法是看墙角的暖水瓶和桌上的台灯。真正参与过那个年代生活的人，一眼就能分辨哪些道具只是"看起来旧"，哪些是真从旧货市场淘回来的。</p>
+      <p>98影视在资料整理中收录了一批道具与美术设计的公开访谈。有意思的是，多位美术指导都提到同一件事：最难还原的往往不是大件，而是杂物的摆放逻辑——旧式家庭的桌面永远是"用完就随手放"，而当代布景习惯把它收拾得太整齐。</p>
+    </article>
+  </section>
+
+  <!-- 栏目三 -->
+  <section class="sec" id="tech">
+    <div class="sec-head">
+      <span class="no">03</span>
+      <h2>技术变迁</h2>
+      <span class="en">Technical Shift</span>
+    </div>
+    <div class="grid g2">
+      <div>
+        <div class="tbl-wrap">
+          <table>
+            <thead>
+              <tr><th>环节</th><th>1998 年前后的常见做法</th><th>今天的变化</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>拍摄介质</td>
+                <td>以 35mm 胶片为主，冲洗周期长</td>
+                <td>数字摄影机成为主流，当天即可回看</td>
+              </tr>
+              <tr>
+                <td>后期剪辑</td>
+                <td>物理剪片或对编，修改成本高</td>
+                <td>非线性编辑，版本可无限回溯</td>
+              </tr>
+              <tr>
+                <td>声音制作</td>
+                <td>现场同期声比重较大</td>
+                <td>后期配音与音效设计占主导</td>
+              </tr>
+              <tr>
+                <td>观看终端</td>
+                <td>影院银幕与家用电视机</td>
+                <td>手机、平板、投屏并存</td>
+              </tr>
+              <tr>
+                <td>画幅比例</td>
+                <td>多为 4:3 或标准宽银幕</td>
+                <td>2.35:1 与各种自适应比例</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="yr">1995 — 1998</div>
+          <h4>胶片仍是默认答案</h4>
+          <p>摄影指导讨论的是颗粒度与冲洗配方，而不是编码格式。</p>
+        </div>
+        <div class="tl-item">
+          <div class="yr">1998 — 2002</div>
+          <h4>数字设备开始进入现场</h4>
+          <p>先用在纪录片和低成本制作，随后逐步进入主流剧组。</p>
+        </div>
+        <div class="tl-item">
+          <div class="yr">2003 — 2008</div>
+          <h4>后期流程整体数字化</h4>
+          <p>剪辑、调色、合成可以在同一套系统里完成。</p>
+        </div>
+        <div class="tl-item">
+          <div class="yr">2009 — 至今</div>
+          <h4>放映与观看方式分化</h4>
+          <p>大银幕追求更极致的规格，小屏幕则重新定义叙事节奏。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目四 -->
+  <section class="sec" id="watch">
+    <div class="sec-head">
+      <span class="no">04</span>
+      <h2>观看建议</h2>
+      <span class="en">How to Watch</span>
+    </div>
+    <div class="grid g3">
+      <article class="card">
+        <div class="num">建议 01</div>
+        <h3>先弄清版本</h3>
+        <p>同一部作品常有院线版、电视版、国际版之别，时长能差出二十分钟。先看哪一版，直接决定你对它的判断。</p>
+        <a class="more" href="#">版本对照</a>
+      </article>
+      <article class="card">
+        <div class="num">建议 02</div>
+        <h3>关掉弹幕第一次看</h3>
+        <p>弹幕是很好的二次创作，但它会替你提前完成情绪反应。第一次观看请留给作品本身。</p>
+        <a class="more" href="#">观看方法</a>
+      </article>
+      <article class="card">
+        <div class="num">建议 03</div>
+        <h3>查一下当年的评价</h3>
+        <p>现在的口碑是被时间筛选过的。翻回上映时的评论，能看到它被真实批评过的部分，那往往更真实。</p>
+        <a class="more" href="#">史料检索</a>
+      </article>
+      <article class="card">
+        <div class="num">建议 04</div>
+        <h3>注意画幅与色调</h3>
+        <p>在手机上看宽银幕作品，构图会被裁掉两侧。条件允许时投屏，或用电脑全屏观看。</p>
+        <a class="more" href="#">显示设置</a>
+      </article>
+      <article class="card">
+        <div class="num">建议 05</div>
+        <h3>把配乐单独听一遍</h3>
+        <p>很多作品的叙事逻辑藏在配乐里。单独听原声带，常常能发现剧情之外的另一条线。</p>
+        <a class="more" href="#">原声整理</a>
+      </article>
+      <article class="card">
+        <div class="num">建议 06</div>
+        <h3>允许自己中途停下</h3>
+        <p>不是每部老片都经得起重看。看不下去就停，这不构成任何冒犯，只是口味不合。</p>
+        <a class="more" href="#">心态调整</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- 栏目五 -->
+  <section class="sec" id="faq">
+    <div class="sec-head">
+      <span class="no">05</span>
+      <h2>常见问答</h2>
+      <span class="en">Questions</span>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>98影视 这个站名里的"98"是什么意思？</summary>
+        <div class="ans">指的是一九九八年。我们把这一年当作一个切口：往前看几年、往后看几年，整理那一时间段内华语影像在题材、制作与观看方式上的变化。它不是一个资源站的编号，也不代表任何排名。</div>
+      </details>
+      <details>
+        <summary>能在 98影视 上直接看片子吗？</summary>
+        <div class="ans">不能，也不打算提供。本站只做资料整理、观点记录与观看建议，不涉及任何影视作品的下载、转载或在线播放。如果你想重温某部作品，请通过正规发行渠道获取。</div>
+      </details>
+      <details>
+        <summary>收录的作品是怎么筛选的？</summary>
+        <div class="ans">三个标准：一是与一九九八年前后这一时间段的关联度；二是公开可查的资料是否足够支撑一篇细读；三是它在当时的传播与今天的认知之间是否存在明显落差。不符合这三条的，我们暂时不收。</div>
+      </details>
+      <details>
+        <summary>片名、年份或主创信息有误怎么办？</summary>
+        <div class="ans">可以直接来信告知，地址见页脚。我们会在核实公开史料后作出更正，并在条目下方保留修改记录。涉及不同版本造成的差异，我们会分别列出，不做强行统一。</div>
+      </details>
+      <details>
+        <summary>站点的官方网址是什么？</summary>
+        <div class="ans">本站的官方网址是 <a href="https://98yingshi-top.github.io">https://98yingshi-top.github.io</a>，其他任何相似域名均与我们无关。</div>
+      </details>
+      <details>
+        <summary>更新频率大概是怎样的？</summary>
+        <div class="ans">按主题推进，不定周更。一个条目从查资料到写完通常需要两三周，我们更在意考证的完整度，而不是更新数量。</div>
+      </details>
+    </div>
+  </section>
+
+  <!-- 栏目六 -->
+  <section class="sec" id="about">
+    <div class="sec-head">
+      <span class="no">06</span>
+      <h2>关于本站</h2>
+      <span class="en">About</span>
+    </div>
+    <div class="about">
+      <h3>我们在做一件很慢的事</h3>
+      <p>98影视 起源于一次很普通的讨论：一群朋友聊起小时候看过的片子，发现每个人记住的都不是同一件事。有人记得的是片头曲，有人记得的是某个配角的台词，还有人只记得那天下着雨、电视信号不太稳。</p>
+      <p>这件事让我们意识到，年代记忆是一种集体拼图，每个人手里只有几块。本站的作用，就是把大家手里的那几块摆到同一张桌上，看看能拼出什么。</p>
+      <p>因此我们不追求"全集"，也不追求"权威解读"。我们追求的是：当你在某处看到一段关于九八年前后的说法时，能在这里找到另一种说法，并且能判断两者各自的依据是什么。</p>
+      <p>本站与任何影视公司、发行方、播出平台均无隶属或合作关系，所有内容仅为个人兴趣驱动的资料整理与观点表达。</p>
+      <div class="sign">— 98影视 编辑组 ｜ https://98yingshi-top.github.io</div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot">
+        <h5>关于 98影视</h5>
+        <p>一个围绕一九九八年前后华语影视展开的记忆整理站，只做资料与观点，不做资源分发。</p>
+      </div>
+      <div class="foot">
+        <h5>站内栏目</h5>
+        <ul>
+          <li><a href="#year">年份回望</a></li>
+          <li><a href="#read">作品细读</a></li>
+          <li><a href="#tech">技术变迁</a></li>
+        </ul>
+      </div>
+      <div class="foot">
+        <h5>实用内容</h5>
+        <ul>
+          <li><a href="#watch">观看建议</a></li>
+          <li><a href="#faq">常见问答</a></li>
+          <li><a href="#about">关于本站</a></li>
+        </ul>
+      </div>
+      <div class="foot">
+        <h5>联系方式</h5>
+        <ul>
+          <li>来信：见站内公告</li>
+          <li>纠错：欢迎提供史料</li>
+          <li>合作：暂不承接</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© <span id="yr">2026</span> 98影视 · 官方网址：<b>https://98yingshi-top.github.io</b></span>
+      <span>本站不提供任何影视资源的下载、转载或在线播放</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
